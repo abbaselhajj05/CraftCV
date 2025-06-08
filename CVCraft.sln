@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVCraft", "CVCraft\CVCraft.csproj", "{58767563-B10E-4230-A537-0EAD7BB83878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58767563-B10E-4230-A537-0EAD7BB83878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58767563-B10E-4230-A537-0EAD7BB83878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58767563-B10E-4230-A537-0EAD7BB83878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58767563-B10E-4230-A537-0EAD7BB83878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B607BC3B-B7B0-4A07-A4F5-A7B8A8B82B42}
+	EndGlobalSection
+EndGlobal

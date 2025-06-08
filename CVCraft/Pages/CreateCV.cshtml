@@ -1,0 +1,299 @@
+@page
+@model CVCraft.Pages.CreateCVModel
+@{
+    ViewData["Title"] = "Create CV";
+}
+
+@section Styles {
+    <style>
+        .form-container {
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: #fff;
+            box-shadow: var(--shadow);
+            transition: transform .2s, box-shadow .2s;
+        }
+
+            .section:hover {
+                transform: translateY(-2px);
+                box-shadow: var(--shadow-lg);
+            }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: var(--gray-50);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .section-icon {
+            width: 2rem;
+            height: 2rem;
+            background: var(--secondary);
+            color: #fff;
+            border-radius: .25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .section-body {
+            padding: 1.5rem;
+        }
+
+        .two-col {
+            display: grid;
+            gap: 1.5rem;
+        }
+        @@media (min-width: 768px) {
+            .two-col
+
+        {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: .25rem;
+            font-weight: 500;
+        }
+
+        .form-control, .form-select {
+            border-radius: .5rem;
+            padding: .5rem .75rem;
+            border: 1px solid var(--gray-300);
+            font-size: 1rem;
+            transition: border-color .2s, box-shadow .2s;
+        }
+
+            .form-control:focus, .form-select:focus {
+                border-color: var(--secondary);
+                box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+            }
+
+        .validation-summary-errors {
+            background: #fde2e2;
+            border: 1px solid #f5c2c7;
+            color: #842029;
+            padding: 1rem;
+            border-radius: .5rem;
+            margin-bottom: 1.5rem;
+            font-size: .9rem;
+        }
+
+        .btn-create {
+            background: var(--secondary);
+            color: #fff;
+            padding: .75rem 2rem;
+            border-radius: .5rem;
+            font-size: 1rem;
+            transition: background .2s, transform .2s;
+        }
+
+            .btn-create:hover {
+                background: #5b46d4;
+                transform: translateY(-2px);
+            }
+
+        .form-check {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: .75rem;
+        }
+
+        .form-check-input {
+            width: 1rem;
+            height: 1rem;
+        }
+
+            .form-check-input:checked {
+                background: var(--secondary);
+                border-color: var(--secondary);
+            }
+    </style>
+}
+
+<div class="form-container">
+    <form method="post" enctype="multipart/form-data" class="mt-4">
+
+        <div asp-validation-summary="All" class="validation-summary-errors"></div>
+
+        <!-- Personal & Contact -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-user"></i></div>
+                <div class="section-title">Personal & Contact</div>
+            </div>
+            <div class="section-body two-col">
+                <div class="form-group">
+                    <label asp-for="ViewModel.FirstName" class="form-label"></label>
+                    <input asp-for="ViewModel.FirstName" class="form-control" name="FirstName" />
+                    <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.FirstName" class="text-danger" data-valmsg-for="FirstName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ViewModel.LastName" class="form-label"></label>
+                    <input asp-for="ViewModel.LastName" class="form-control" name="LastName" />
+                    <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.LastName" class="text-danger" data-valmsg-for="LastName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ViewModel.BirthDate" class="form-label"></label>
+                    <input asp-for="ViewModel.BirthDate" class="form-control" type="date" name="BirthDate" />
+                    <span asp-validation-for="Input.BirthDate" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.BirthDate" class="text-danger" data-valmsg-for="BirthDate"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ViewModel.Email" class="form-label"></label>
+                    <input asp-for="ViewModel.Email" class="form-control" type="email" name="Email" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.Email" class="text-danger" data-valmsg-for="Email"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ViewModel.EmailConfirmation" class="form-label"></label>
+                    <input asp-for="ViewModel.EmailConfirmation" class="form-control" type="email" name="EmailConfirmation" />
+                    <span asp-validation-for="Input.EmailConfirmation" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.EmailConfirmation" class="text-danger" data-valmsg-for="EmailConfirmation"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills & Security -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-code"></i></div>
+                <div class="section-title">Skills & Security</div>
+            </div>
+            <div class="section-body two-col">
+                <div>
+                    <label class="form-label">Skills</label>
+                    <div class="form-check">
+                        <input asp-for="ViewModel.HasJavaSkill" class="form-check-input" type="checkbox" id="javaSkill" name="HasJavaSkill" />
+                        <label class="form-check-label" for="javaSkill">Java</label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="ViewModel.HasPythonSkill" class="form-check-input" type="checkbox" id="pythonSkill" name="HasPythonSkill" />
+                        <label class="form-check-label" for="pythonSkill">Python</label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="ViewModel.HasAspNetSkill" class="form-check-input" type="checkbox" id="aspNetSkill" name="HasAspNetSkill" />
+                        <label class="form-check-label" for="aspNetSkill">ASP.NET</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ViewModel.Password" class="form-label"></label>
+                    <input asp-for="ViewModel.Password" class="form-control" type="password" name="Password" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.Password" class="text-danger" data-valmsg-for="Password"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Details -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-list"></i></div>
+                <div class="section-title">Other Details</div>
+            </div>
+            <div class="section-body two-col">
+                <div class="form-group">
+                    <label asp-for="ViewModel.SelectedNationalities" class="form-label"></label>
+                    <select asp-for="ViewModel.SelectedNationalities"
+                            class="form-select"
+                            asp-items="Model.ViewModel.NationalityOptions"
+                            name="SelectedNationalities"
+                            multiple>
+                    </select>
+                    <span asp-validation-for="Input.SelectedNationalities" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.SelectedNationalities" class="text-danger" data-valmsg-for="SelectedNationalities"></span>
+                </div>
+                <div>
+                    <label class="form-label">Gender</label>
+                    <div>
+                        @foreach (var gender in Model.ViewModel.GenderOptions) {
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input"
+                                       asp-for="ViewModel.SelectedGender"
+                                       type="radio"
+                                       value="@gender"
+                                       id="@gender"
+                                       name="SelectedGender" />
+                                <label class="form-check-label" for="@gender">@gender</label>
+                            </div>
+                        }
+                    </div>
+                    <span asp-validation-for="Input.SelectedGender" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.SelectedGender" class="text-danger" data-valmsg-for="SelectedGender"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo & Verification -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-camera"></i></div>
+                <div class="section-title">Photo & Verification</div>
+            </div>
+            <div class="section-body two-col">
+                <div class="form-group">
+                    <label class="form-label">Upload Profile Photo</label>
+                    <input type="file" class="form-control" asp-for="ViewModel.UploadedPhoto" name="UploadedPhoto" />
+                    <span asp-validation-for="Input.UploadedPhoto" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.UploadedPhoto" class="text-danger" data-valmsg-for="UploadedPhoto"></span>
+                </div>
+                <div>
+                    <label class="form-label">Verification</label>
+                    <div class="row g-2 align-items-center">
+                        <div class="col-auto">
+                            <span class="form-control-plaintext">@Model.ViewModel.VerificationOperand1</span>
+                            <input type="hidden" asp-for="ViewModel.VerificationOperand1" name="VerificationOperand1" value="@Model.ViewModel.VerificationOperand1" />
+                        </div>
+                        <div class="col-auto">+</div>
+                        <div class="col-auto">
+                            <span class="form-control-plaintext">@Model.ViewModel.VerificationOperand2</span>
+                            <input type="hidden" asp-for="ViewModel.VerificationOperand2" name="VerificationOperand2" value="@Model.ViewModel.VerificationOperand2" />
+                        </div>
+                        <div class="col-auto">=</div>
+                        <div class="col">
+                            <input asp-for="ViewModel.VerificationSum" class="form-control" name="VerificationSum" />
+                        </div>
+                    </div>
+                    <span asp-validation-for="Input.VerificationSum" class="text-danger"></span>
+                    <span asp-validation-for="ViewModel.VerificationSum" class="text-danger" data-valmsg-for="VerificationSum"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-create">Create My CV</button>
+        </div>
+
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

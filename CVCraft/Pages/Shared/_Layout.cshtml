@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CVCraft</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png">
+
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #4f46e5;
+            --accent: #06b6d4;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --white: #ffffff;
+            --radius: 12px;
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gray-50);
+            color: var(--gray-800);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-200);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+            .logo:hover {
+                color: var(--secondary);
+                text-decoration: none;
+            }
+
+            .logo i {
+                width: 32px;
+                height: 32px;
+                background: var(--secondary);
+                color: var(--white);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+            }
+
+        /* Navigation */
+        .nav-pills {
+            background: var(--gray-100);
+            border-radius: 10px;
+            padding: 4px;
+        }
+
+            .nav-pills .nav-link {
+                border-radius: 8px;
+                color: var(--gray-600);
+                font-weight: 500;
+                padding: 8px 16px;
+                border: none;
+                transition: all 0.2s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+                .nav-pills .nav-link:hover {
+                    background: var(--white);
+                    color: var(--gray-800);
+                    box-shadow: var(--shadow);
+                }
+
+                .nav-pills .nav-link.active {
+                    background: var(--secondary);
+                    color: var(--white);
+                    box-shadow: var(--shadow);
+                }
+
+        /* Main Container */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+            min-height: calc(100vh - 64px);
+        }
+
+        /* Page Header */
+        .page-header {
+            margin-bottom: 32px;
+        }
+
+        .page-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .page-description {
+            color: var(--gray-600);
+            font-size: 16px;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 24px;
+            transition: all 0.2s ease;
+        }
+
+            .card:hover {
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-1px);
+            }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gray-100);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-600);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .card-description {
+            color: var(--gray-600);
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            border-radius: 8px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+            .btn-primary:hover {
+                background: #4338ca;
+                transform: translateY(-1px);
+                box-shadow: var(--shadow-lg);
+                color: var(--white);
+            }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--gray-700);
+            border: 1px solid var(--gray-300);
+        }
+
+            .btn-outline:hover {
+                background: var(--gray-100);
+                border-color: var(--gray-400);
+                color: var(--gray-800);
+                text-decoration: none;
+            }
+
+        .btn-accent {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+            .btn-accent:hover {
+                background: #0891b2;
+                color: var(--white);
+            }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        /* Stats Cards */
+        .stat-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            color: var(--gray-600);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* Mobile Responsive */
+        @@media (max-width: 768px) {
+            .header-content
+
+        {
+            padding: 0 16px;
+        }
+
+        .main-container {
+            padding: 24px 16px;
+        }
+
+        .page-title {
+            font-size: 24px;
+        }
+
+        .nav-pills {
+            order: 3;
+            width: 100%;
+            margin-top: 16px;
+        }
+
+        .header-content {
+            flex-wrap: wrap;
+            height: auto;
+            padding: 16px;
+        }
+
+        .quick-actions {
+            flex-direction: column;
+        }
+
+        .btn {
+            justify-content: center;
+        }
+
+        }
+
+        /* Content Body Styles */
+        .content-body {
+            /* Main content area styles */
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 48px 24px;
+            color: var(--gray-500);
+        }
+
+            .empty-state i {
+                font-size: 48px;
+                margin-bottom: 16px;
+                color: var(--gray-400);
+            }
+
+        /* Table Styles */
+        .table {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin: 0;
+        }
+
+            .table th {
+                background: var(--gray-50);
+                border: none;
+                font-weight: 600;
+                color: var(--gray-700);
+                padding: 16px;
+                font-size: 13px;
+            }
+
+            .table td {
+                border: none;
+                padding: 16px;
+                border-top: 1px solid var(--gray-200);
+            }
+
+        /* Alerts */
+        .alert {
+            border: none;
+            border-radius: var(--radius);
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .alert-success {
+            background: #f0f9ff;
+            color: #0c4a6e;
+            border-left: 4px solid var(--accent);
+        }
+
+        .alert-info {
+            background: #eff6ff;
+            color: #1e3a8a;
+            border-left: 4px solid var(--secondary);
+        }
+    </style>
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="~/" class="logo">
+                <i class="fas fa-file-text"></i>
+                CVCraft
+            </a>
+
+            <nav class="nav nav-pills">
+                <a class="nav-link" href="~/">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a class="nav-link" href="~/ManageCVs">
+                    <i class="fas fa-folder-open"></i>
+                    Manage CVs
+                </a>
+                <a class="nav-link" href="~/CreateCV">
+                    <i class="fas fa-plus"></i>
+                    Create CV
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title">@ViewData["Title"]</h1>
+            <p class="page-description">
+                @if (ViewData["Title"].ToString() == "Dashboard") {
+                    <text>Welcome to CVCraft. Manage and create professional CVs with ease.</text>
+                }
+                else if (ViewData["Title"].ToString() == "Manage CVs") {
+                    <text>View, edit, and organize all your CVs in one place.</text>
+                }
+                else if (ViewData["Title"].ToString() == "Create CV") {
+                    <text>Build a professional CV with our intuitive form builder.</text>
+                }
+                else if (ViewData["Title"].ToString() == "Edit CV") {
+                    <text>Edit your CV with ease.</text>
+                }
+                else {
+                    <text>Professional CV management made simple.</text>
+                }
+            </p>
+        </div>
+
+        <!-- Content Body -->
+        <div class="content-body">
+            @RenderBody()
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Minimal Custom Script -->
+    <script>
+        // Active nav highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.toLowerCase();
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href) {
+                    const linkPath = href.toLowerCase().replace('~/', '/');
+                    if (currentPath === linkPath ||
+                        (currentPath === '/' && linkPath === '/') ||
+                        (currentPath.includes('managecvs') && linkPath.includes('managecvs')) ||
+                        (currentPath.includes('createcv') && linkPath.includes('createcv'))) {
+                        link.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        // Auto-hide alerts
+        setTimeout(() => {
+            const alerts = document.querySelectorAll('.alert');
+            alerts.forEach(alert => {
+                alert.style.transition = 'opacity 0.5s ease';
+                alert.style.opacity = '0';
+                setTimeout(() => alert.remove(), 500);
+            });
+        }, 5000);
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

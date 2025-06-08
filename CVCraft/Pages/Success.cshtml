@@ -1,0 +1,63 @@
+﻿@page
+@model CVCraft.Pages.SuccessModel
+@{
+    ViewData["Title"] = "CV Submission Success";
+}
+
+<div class="container py-5">
+    @if (!ViewData.ModelState.IsValid) {
+        <div class="alert alert-danger">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors)) {
+                <p>@error.ErrorMessage</p>
+            }
+        </div>
+    }
+    else {
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-success">🎉 CV Submitted Successfully!</h2>
+            <p class="text-muted">Your CV has been received. Below are your details:</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg border-0">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-4 text-primary">@Model.ViewModel.FullName</h4>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Date of Birth:</strong> @Model.ViewModel.FormattedBirthDate (@Model.ViewModel.Age years old)
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Nationalities:</strong> @Model.ViewModel.NationalityDisplay
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Gender:</strong> @Model.ViewModel.GenderDisplay
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Skills:</strong> @Model.ViewModel.SkillsDisplay
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Email:</strong> @Model.ViewModel.Email
+                            </li>
+                            <li class="list-group-item">
+                                <strong>CV Created At:</strong> @Model.ViewModel.FormattedCreatedAt
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Random Number:</strong> @Model.ViewModel.RandomNumber
+                            </li>
+                        </ul>
+
+                        @if (!string.IsNullOrEmpty(Model.ViewModel.PhotoPath)) {
+                            <div class="mt-4 text-center">
+                                <strong class="d-block mb-2">Uploaded Photo:</strong>
+                                <img src="@Url.Content(Model.ViewModel.PhotoPath)" alt="Photo"
+                                     class="img-thumbnail shadow" style="max-width: 200px;" />
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

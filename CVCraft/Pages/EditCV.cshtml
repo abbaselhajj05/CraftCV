@@ -1,0 +1,117 @@
+@page "{id:guid}"
+@model CVCraft.Pages.EditCVModel
+@{
+    ViewData["Title"] = "Edit CV";
+}
+
+<form method="post" class="mt-4" enctype="multipart/form-data">
+
+    <!-- Name Section -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="ViewModel.FirstName" class="form-label"></label>
+            <input asp-for="ViewModel.FirstName" class="form-control" name="FirstName" />
+            <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+            <span asp-validation-for="ViewModel.FirstName" class="text-danger" data-valmsg-for="FirstName"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="ViewModel.LastName" class="form-label"></label>
+            <input asp-for="ViewModel.LastName" class="form-control" name="LastName" />
+            <span asp-validation-for="Input.LastName" class="text-danger"></span>
+            <span asp-validation-for="ViewModel.LastName" class="text-danger" data-valmsg-for="LastName"></span>
+        </div>
+    </div>
+
+    <!-- Birth Date -->
+    <div class="mb-3">
+        <label asp-for="ViewModel.BirthDate" class="form-label"></label>
+        <input asp-for="ViewModel.BirthDate" class="form-control" type="date" name="BirthDate" />
+        <span asp-validation-for="Input.BirthDate" class="text-danger"></span>
+        <span asp-validation-for="ViewModel.BirthDate" class="text-danger" data-valmsg-for="BirthDate"></span>
+    </div>
+
+    <!-- Nationalities -->
+    <div class="mb-3">
+        <label asp-for="ViewModel.SelectedNationalities" class="form-label"></label>
+        <select asp-for="ViewModel.SelectedNationalities" class="form-select" asp-items="Model.ViewModel.NationalityOptions" name="SelectedNationalities" multiple></select>
+        <span asp-validation-for="Input.SelectedNationalities" class="text-danger"></span>
+        <span asp-validation-for="ViewModel.SelectedNationalities" class="text-danger" data-valmsg-for="SelectedNationalities"></span>
+    </div>
+
+    <!-- Gender -->
+    <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <div>
+            @foreach (var gender in Model.ViewModel.GenderOptions) {
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" asp-for="ViewModel.SelectedGender" value="@gender" id="@gender" name="SelectedGender" />
+                    <label class="form-check-label" for="@gender">@gender</label>
+                </div>
+            }
+        </div>
+        <span asp-validation-for="Input.SelectedGender" class="text-danger"></span>
+        <span asp-validation-for="ViewModel.SelectedGender" class="text-danger" data-valmsg-for="SelectedGender"></span>
+    </div>
+
+    <!-- Skills -->
+    <div class="mb-3">
+        <label class="form-label">Skills</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" asp-for="ViewModel.HasJavaSkill" id="javaSkill" name="HasJavaSkill" />
+            <label class="form-check-label" for="javaSkill">Java</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" asp-for="ViewModel.HasPythonSkill" id="pythonSkill" name="HasPythonSkill" />
+            <label class="form-check-label" for="pythonSkill">Python</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" asp-for="ViewModel.HasAspNetSkill" id="aspNetSkill" name="HasAspNetSkill" />
+            <label class="form-check-label" for="aspNetSkill">ASP.NET</label>
+        </div>
+    </div>
+
+    <!-- Email & Confirmation -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="ViewModel.Email" class="form-label"></label>
+            <input asp-for="ViewModel.Email" class="form-control" type="email" name="Email" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+            <span asp-validation-for="ViewModel.Email" class="text-danger" data-valmsg-for="Email"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="ViewModel.EmailConfirmation" class="form-label"></label>
+            <input asp-for="ViewModel.EmailConfirmation" class="form-control" type="email" name="EmailConfirmation" />
+            <span asp-validation-for="Input.EmailConfirmation" class="text-danger"></span>
+            <span asp-validation-for="ViewModel.EmailConfirmation" class="text-danger" data-valmsg-for="EmailConfirmation"></span>
+        </div>
+    </div>
+
+    <!-- Password -->
+    <div class="mb-3">
+        <label asp-for="ViewModel.Password" class="form-label"></label>
+        <input asp-for="ViewModel.Password" class="form-control" type="password" name="Password" />
+        <span asp-validation-for="Input.Password" class="text-danger"></span>
+        <span asp-validation-for="ViewModel.Password" class="text-danger" data-valmsg-for="Password"></span>
+    </div>
+
+    <!-- Profile Photo -->
+    <div class="mb-3">
+        <label class="form-label">Upload Profile Photo</label>
+        <input type="file" class="form-control" asp-for="ViewModel.UploadedPhoto" name="UploadedPhoto" />
+        <span asp-validation-for="Input.UploadedPhoto" class="text-danger"></span>
+        <span asp-validation-for="ViewModel.UploadedPhoto" class="text-danger" data-valmsg-for="UploadedPhoto"></span>
+    </div>
+
+
+    <!-- Validation Summary -->
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">Update</button>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

@@ -1,0 +1,369 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CVCraft.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CVCraft.gw6f0zxp2z.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\07172852-a7fb-4e85-bc2c-af4df32f26a6_WIN_20230805_12_08_42_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\07172852-a7fb-4e85-bc2c-af4df32f26a6_WIN_20230805_12_08_42_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\1e667b37-10b8-4b35-8ae8-214ec3d8e9ff_WIN_20230805_12_08_42_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1e667b37-10b8-4b35-8ae8-214ec3d8e9ff_WIN_20230805_12_08_42_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\26581d8b-3e05-4836-acb3-4836a21cd30d_WIN_20230805_12_08_42_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\26581d8b-3e05-4836-acb3-4836a21cd30d_WIN_20230805_12_08_42_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\284bc027-28cf-46cf-87f9-f0e814be2b00_WIN_20231002_12_08_03_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\284bc027-28cf-46cf-87f9-f0e814be2b00_WIN_20231002_12_08_03_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\30b5a072-6a91-4157-a14c-b662bdc44c7b_WIN_20231002_12_11_18_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\30b5a072-6a91-4157-a14c-b662bdc44c7b_WIN_20231002_12_11_18_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\37eeba86-2732-4c58-ac23-4860bb7f9c51_WIN_20230805_12_08_42_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\37eeba86-2732-4c58-ac23-4860bb7f9c51_WIN_20230805_12_08_42_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\404ddbe7-e8d4-431f-b12e-6323b8826539_WIN_20250508_15_00_49_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\404ddbe7-e8d4-431f-b12e-6323b8826539_WIN_20250508_15_00_49_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\467b225d-dde1-4e3e-b234-eaa089d12a09_WIN_20231002_12_08_03_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\467b225d-dde1-4e3e-b234-eaa089d12a09_WIN_20231002_12_08_03_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\697f33ba-16de-4bc1-b1b5-e29dc11008ca_5956444965070554336_121.jpg",
+      "PackagePath": "staticwebassets\\uploads\\697f33ba-16de-4bc1-b1b5-e29dc11008ca_5956444965070554336_121.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\6a5af788-7d0c-4567-bfb0-0b8babfc7fab_WIN_20240325_14_41_46_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6a5af788-7d0c-4567-bfb0-0b8babfc7fab_WIN_20240325_14_41_46_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\6d17e4db-65a3-430e-a656-746c2609c644_WIN_20230706_18_59_44_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6d17e4db-65a3-430e-a656-746c2609c644_WIN_20230706_18_59_44_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\7afbcfb6-06c4-4a01-b9b3-1eb3346ad5b4_5956444965070554336_121.jpg",
+      "PackagePath": "staticwebassets\\uploads\\7afbcfb6-06c4-4a01-b9b3-1eb3346ad5b4_5956444965070554336_121.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\8210cc5d-ea46-400f-a679-082adeeff351_5956444965070554336_121.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8210cc5d-ea46-400f-a679-082adeeff351_5956444965070554336_121.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\87384809-9b03-436d-9b35-7358deb10e6c_WIN_20231002_12_08_03_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\87384809-9b03-436d-9b35-7358deb10e6c_WIN_20231002_12_08_03_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\9fc711ed-f6e2-4598-9c99-8fb6593a1c83_5956444965070554336_121.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9fc711ed-f6e2-4598-9c99-8fb6593a1c83_5956444965070554336_121.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\a3aaf5b8-e9d4-4967-8b45-dc4855daf70e_WIN_20231002_12_08_03_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a3aaf5b8-e9d4-4967-8b45-dc4855daf70e_WIN_20231002_12_08_03_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\a79dc0a7-5e05-43b6-99e9-ab8c216e72b2_WIN_20250508_15_00_49_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a79dc0a7-5e05-43b6-99e9-ab8c216e72b2_WIN_20250508_15_00_49_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\a95467b1-c324-4e5b-9f15-96cc5d4ba98e_WIN_20240325_14_42_23_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a95467b1-c324-4e5b-9f15-96cc5d4ba98e_WIN_20240325_14_42_23_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\b1dad5ef-c2c0-4e60-b1e5-86f7a259d368_WIN_20231002_12_08_03_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b1dad5ef-c2c0-4e60-b1e5-86f7a259d368_WIN_20231002_12_08_03_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\bf53d56e-edb7-4ced-983d-f91bc93e91e8_5956444965070554336_121.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bf53d56e-edb7-4ced-983d-f91bc93e91e8_5956444965070554336_121.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\c0f90504-4cfe-45e1-930f-d5baa29042c6_WIN_20250508_15_00_49_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c0f90504-4cfe-45e1-930f-d5baa29042c6_WIN_20250508_15_00_49_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\d2d540b6-765b-473f-a0bf-3f11c8b5219d_5956444965070554336_121.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d2d540b6-765b-473f-a0bf-3f11c8b5219d_5956444965070554336_121.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\db9406af-75cf-4265-8990-a42d72c57924_WIN_20250508_15_00_49_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\db9406af-75cf-4265-8990-a42d72c57924_WIN_20250508_15_00_49_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\fbda92ac-f858-49ed-a03a-1128109876ea_WIN_20231002_12_11_18_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fbda92ac-f858-49ed-a03a-1128109876ea_WIN_20231002_12_11_18_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Homework5\\CVCraft\\wwwroot\\uploads\\fe04f594-2733-44a5-843c-f70a1bf47ee3_WIN_20240325_14_42_23_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fe04f594-2733-44a5-843c-f70a1bf47ee3_WIN_20240325_14_42_23_Pro.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CVCraft.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CVCraft.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CVCraft.props",
+      "PackagePath": "build\\CVCraft.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CVCraft.props",
+      "PackagePath": "buildMultiTargeting\\CVCraft.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CVCraft.props",
+      "PackagePath": "buildTransitive\\CVCraft.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
