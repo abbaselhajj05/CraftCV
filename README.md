@@ -46,16 +46,15 @@ dotnet run
 
 ```
 CVCraft/
-│   appsettings.json
-│   appsettings.Development.json
-│   CVCraft.csproj
-│   CVCraft.csproj.user
-│   Program.cs
+├── appsettings.json
+├── appsettings.Development.json
+├── CVCraft.csproj
+├── Program.cs
 │
 ├── bin/Debug/net8.0/
-│   ├── CVCraft.exe, CVCraft.dll, etc.
-│   ├── Homework5.exe, Homework5.dll, etc.
-│   └── Various runtime and dependency files
+│   ├── CVCraft.exe
+│   ├── CVCraft.dll
+│   └── Other runtime files
 │
 ├── Data/
 │   └── AppDbContext.cs
@@ -72,31 +71,22 @@ CVCraft/
 │   ├── BindingModels/
 │   │   ├── CVCreateBindingModel.cs
 │   │   └── CVEditBindingModel.cs
-│   │
 │   ├── Entities/
 │   │   └── CVInfo.cs
-│   │
 │   └── ViewModels/
 │       ├── CVCreateViewModel.cs
 │       ├── CVEditViewModel.cs
 │       └── CVSummaryViewModel.cs
 │
-├── obj/
-│   └── Build outputs and intermediate files
-│
 ├── Pages/
 │   ├── Shared/
 │   │   ├── _Layout.cshtml
-│   │   ├── _Layout.cshtml.css
 │   │   └── _ValidationScriptsPartial.cshtml
-│   │
-│   ├── CreateCV.cshtml (+ .cs)
-│   ├── EditCV.cshtml (+ .cs)
-│   ├── Index.cshtml (+ .cs)
-│   ├── ManageCVs.cshtml (+ .cs)
-│   ├── Success.cshtml (+ .cs)
-│   ├── _ViewImports.cshtml
-│   └── _ViewStart.cshtml
+│   ├── CreateCV.cshtml
+│   ├── EditCV.cshtml
+│   ├── Index.cshtml
+│   ├── ManageCVs.cshtml
+│   └── Success.cshtml
 │
 ├── Properties/
 │   └── launchSettings.json
@@ -106,8 +96,7 @@ CVCraft/
 │   ├── ICVInfoService.cs
 │   ├── IFileUploadFileService.cs
 │   ├── ArithmeticService.cs
-│   ├── CVInfoService.cs
-│   └── FileUploadService.cs
+│   └── CVInfoService.cs
 │
 └── wwwroot/
     ├── favicon.ico
