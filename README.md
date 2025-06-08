@@ -1,24 +1,24 @@
 # CraftCV
 
-**CraftCV** is a powerful, cleanly architected ASP.NET Core MVC web application that allows users to create and manage resumes with ease. The project demonstrates solid backend development, full CRUD functionality, and a strong separation of concerns between models, views, and controllers.
+**CraftCV** is a powerful, cleanly architected ASP.NET Core Razor Pages web application that allows users to create and manage resumes with ease. The project demonstrates solid backend development, full CRUD functionality, and a strong separation of concerns between models, views, and page logic.
 
 ## 🚀 Features
 
 - 🔁 Full **CRUD operations** for CV entries (Create, Read, Update, Delete)
-- 🧠 **Strong backend architecture** using ASP.NET Core
+- 🧠 **Robust backend architecture** using ASP.NET Core Razor Pages
 - 🔍 Clear **separation of concerns**:
   - Models handle data and validation
-  - Controllers manage logic
+  - Page models manage logic and routing
   - Views focus on presentation
 - 📁 Local file upload support (e.g., profile pictures in `wwwroot/uploads`)
 - ⚙️ Easy to maintain and extend for future features
 
 ## 🛠️ Tech Stack
 
-- **Backend:** ASP.NET Core MVC
-- **Frontend:** Razor Views, HTML/CSS, Bootstrap (if used)
-- **Persistence:** Entity Framework Core (if used)
-- **Others:** C#, LINQ, RESTful architecture
+- **Backend:** ASP.NET Core Razor Pages
+- **Frontend:** Razor Views, HTML/CSS, Bootstrap
+- **Persistence:** Entity Framework Core
+- **Languages/Tools:** C#, LINQ
 
 ## 📦 Getting Started
 
@@ -27,12 +27,12 @@
 ```bash
 git clone https://github.com/abbaselhajj05/CraftCV.git
 cd CraftCV
-````
+```
 
 ### 2. Open the project in Visual Studio
 
-* Restore NuGet packages via the package manager
-* Set the appropriate startup project
+- Restore NuGet packages via the package manager
+- Set the appropriate startup project
 
 ### 3. Run the application
 
@@ -40,7 +40,7 @@ cd CraftCV
 dotnet run
 ```
 
-* Open your browser at: `http://localhost:5000`
+- Open your browser at: `http://localhost:5000`
 
 ## 🧱 Project Structure
 
@@ -118,12 +118,11 @@ CVCraft/
     └── lib/
         ├── bootstrap/
         └── jquery/
-
 ```
 
 ## 👤 Author
 
-* **Abbas El Hajj** — [GitHub Profile](https://github.com/abbaselhajj05)
+- **Abbas El Hajj** — [GitHub Profile](https://github.com/abbaselhajj05)
 
 ## 📃 License
 
