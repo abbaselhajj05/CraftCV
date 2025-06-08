@@ -122,7 +122,7 @@ CVCraft/
 
 ## 👤 Author
 
-- **Abbas El Hajj** — [GitHub Profile](https://github.com/abbaselhajj05)
+- **Abbas El-Hajj Youssef** — [GitHub Profile](https://github.com/abbaselhajj05)
 
 ## 📃 License
 
